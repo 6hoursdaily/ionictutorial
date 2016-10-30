@@ -16,7 +16,12 @@ angular.module('ionictutorial', ['ionic'])
     url: '/main',
     templateUrl: 'templates/main.html',
     controller: 'MainCtrl'
-  });
+  })
+
+  .state('page2', {
+    url: '/page2',
+    templateUrl: 'templates/page2.html'
+  })
 
   $urlRouterProvider.otherwise('/main');
 })
